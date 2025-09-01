@@ -1,0 +1,25 @@
+{
+  "name": "Citizens Care Limited",
+  "short_name": "Citizens Care",
+  "lang": "en-GB",
+  "description": "Compassionate, professional domiciliary and community care across the UK.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c4a6e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
