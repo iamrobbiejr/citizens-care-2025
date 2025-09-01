@@ -178,7 +178,7 @@ function Header({ route, onRouteChange }: { route: Route; onRouteChange: (r: Rou
 }
 
 // Page Components
-function HomePage({ onNavigate }: { onNavigate: (r: string) => void }) {
+function HomePage({ onNavigate }: { onNavigate: (r: Route) => void }) {
 
     const services = [
         {
@@ -414,7 +414,7 @@ function HomePage({ onNavigate }: { onNavigate: (r: string) => void }) {
                 </div>
             </section>
 
-            <style jsx>{`
+            <style>{`
                 @keyframes fadeIn {
                     from { opacity: 0; }
                     to { opacity: 1; }
@@ -983,11 +983,9 @@ function WhyChooseUsPage() {
 }
 
 function CareersPage() {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [scrollY, setScrollY] = useState(0);
-    const [activeJob, setActiveJob] = useState(null);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [hoveredBenefit, setHoveredBenefit] = useState(null);
+    const [, setScrollY] = useState<number>(0);
+    const [activeJob, setActiveJob] = useState<number | null>(null);
+    const [, setHoveredBenefit] = useState<number | null>(null);
 
     useEffect(() => {
         const handleScroll = () => setScrollY(window.scrollY);
@@ -1040,14 +1038,24 @@ function CareersPage() {
         }
     ];
 
-    const jobs = [
+    type Job = {
+        title: string;
+        type: string;
+        salary: string;
+        location: string;
+        description: string;
+        highlights: string[];
+        requirements: string[];
+        color: string;
+        urgent?: boolean;
+    };
 
-    ];
+    const jobs: Job[] = [];
 
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-red-100 relative overflow-hidden">
-            <style jsx>{`
+            <style>{`
                 @keyframes slideUpFade {
                     0% { opacity: 0; transform: translateY(40px); }
                     100% { opacity: 1; transform: translateY(0); }
@@ -1322,11 +1330,10 @@ function CareersPage() {
 }
 
 function ResourcesPage() {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [scrollY, setScrollY] = useState(0);
-    const [expandedFAQ, setExpandedFAQ] = useState(null);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [activeCategory, setActiveCategory] = useState('all');
+    const [, setScrollY] = useState<number>(0);
+    const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+    const [searchTerm, setSearchTerm] = useState<string>('');
+    const [activeCategory, setActiveCategory] = useState<string>('all');
 
     useEffect(() => {
         const handleScroll = () => setScrollY(window.scrollY);
@@ -1456,7 +1463,7 @@ function ResourcesPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 relative overflow-hidden">
-            <style jsx>{`
+            <style>{`
                 @keyframes slideUpFade {
                     0% { opacity: 0; transform: translateY(40px); }
                     100% { opacity: 1; transform: translateY(0); }
@@ -1884,7 +1891,7 @@ function ContactPage() {
                 </div>
             </section>
 
-            <style jsx>{`
+            <style>{`
                 @keyframes fadeIn {
                     from { opacity: 0; }
                     to { opacity: 1; }
@@ -1924,8 +1931,7 @@ function ContactPage() {
 
 
 function Footer({ onNavigate }: { onNavigate: (route: Route) => void }) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [hoveredSocial, setHoveredSocial] = useState<string | null>(null);
+    const [, setHoveredSocial] = useState<string | null>(null);
 
 
     const socialLinks = [
@@ -1951,7 +1957,7 @@ function Footer({ onNavigate }: { onNavigate: (route: Route) => void }) {
 
     return (
         <footer className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-300 overflow-hidden">
-            <style jsx>{`
+            <style>{`
                 @keyframes float-gentle {
                     0%, 100% { transform: translateY(0) rotate(0deg); }
                     50% { transform: translateY(-10px) rotate(180deg); }
