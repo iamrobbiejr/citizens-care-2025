@@ -77,10 +77,10 @@ function Header({ route, onRouteChange }: { route: Route; onRouteChange: (r: Rou
                     <div className="flex items-center justify-between flex-wrap gap-3">
                         <div className="flex items-center gap-4 flex-wrap">
                             <div className="flex items-center gap-2">
-                                <Phone className="w-4 h-4" /><span className="text-xs">0800 123 4567</span>
+                                <Phone className="w-4 h-4" /><span className="text-xs">00 4477 34180 131</span>
                             </div>
                             <div className="hidden md:flex items-center gap-2">
-                                <Mail className="w-4 h-4" /><span className="text-xs">info@citizens-care.co.uk</span>
+                                <Mail className="w-4 h-4" /><span className="text-xs">admin@citizens-care.co.uk</span>
                             </div>
                             <div className="hidden lg:flex items-center gap-2">
                                 <MapPin className="w-4 h-4" /><span className="text-xs">575-599 Maxted Road, Imex Centre, Biz Space. Hemel Hempstead. HP27DX</span>
@@ -264,22 +264,11 @@ function HomePage({ onNavigate }: { onNavigate: (r: Route) => void }) {
                         <div className="relative animate-slideUp" style={{animationDelay: '0.3s'}}>
                             <div className="relative group">
                                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-rose-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-                                    <div className="w-full h-80 bg-gradient-to-br from-blue-100 to-rose-100 rounded-2xl flex items-center justify-center mb-6">
+                                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-4 shadow-2xl">
+                                    <div className="w-full h-80  bg-gradient-to-br from-blue-100 to-rose-100 rounded-2xl flex items-center justify-center mb-2">
                                         <div className="text-center">
-                                            <Heart className="w-24 h-24 text-rose-500 mx-auto mb-4" />
-                                            <p className="text-slate-600 font-medium">Caring for those who cared for us</p>
+                                            <img src="https://i.postimg.cc/3J7VcZY7/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg" alt="Care Giver Image" className="rounded-2xl border-4 border-white shadow-lg" />
                                         </div>
-                                    </div>
-                                    <div className="grid grid-cols-2 gap-4 text-center">
-                                        {/*<div className="bg-blue-50 rounded-xl p-4">*/}
-                                        {/*    <div className="text-2xl font-bold text-blue-600">500+</div>*/}
-                                        {/*    <div className="text-sm text-slate-600">Families Served</div>*/}
-                                        {/*</div>*/}
-                                        {/*<div className="bg-rose-50 rounded-xl p-4">*/}
-                                        {/*    <div className="text-2xl font-bold text-rose-600">15+</div>*/}
-                                        {/*    <div className="text-sm text-slate-600">Years Experience</div>*/}
-                                        {/*</div>*/}
                                     </div>
                                 </div>
                             </div>
@@ -296,13 +285,13 @@ function HomePage({ onNavigate }: { onNavigate: (r: Route) => void }) {
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">Trusted by hundreds of families across Hertfordshire for exceptional care</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="group text-center animate-slideUp" style={{animationDelay: '0.1s'}}>
                             <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                 <Shield className="w-10 h-10 text-white" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">CQC Regulated</h3>
-                            <p className="text-slate-600">Fully compliant and regularly monitored for quality assurance</p>
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">CQC Pending</h3>
+                            {/*<p className="text-slate-600">Fully compliant and regularly monitored for quality assurance</p>*/}
                         </div>
 
                         <div className="group text-center animate-slideUp" style={{animationDelay: '0.2s'}}>
@@ -321,13 +310,13 @@ function HomePage({ onNavigate }: { onNavigate: (r: Route) => void }) {
                             <p className="text-slate-600">Round-the-clock support and emergency response available</p>
                         </div>
 
-                        <div className="group text-center animate-slideUp" style={{animationDelay: '0.4s'}}>
-                            <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                <Award className="w-10 h-10 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Award Winning</h3>
-                            <p className="text-slate-600">Recognized for excellence in domiciliary care services</p>
-                        </div>
+                        {/*<div className="group text-center animate-slideUp" style={{animationDelay: '0.4s'}}>*/}
+                        {/*    <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
+                        {/*        <Award className="w-10 h-10 text-white" />*/}
+                        {/*    </div>*/}
+                        {/*    <h3 className="text-xl font-bold text-slate-900 mb-3">Award Winning</h3>*/}
+                        {/*    <p className="text-slate-600">Recognized for excellence in domiciliary care services</p>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </section>
@@ -400,7 +389,7 @@ function HomePage({ onNavigate }: { onNavigate: (r: Route) => void }) {
                                 className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl flex items-center"
                             >
                                 <Phone className="w-5 h-5 mr-2" />
-                                Call 0800 123 4567
+                                Call 00 4477 34180 131
                             </button>
                             <button
                                 onClick={() => onNavigate('contact')}
@@ -953,10 +942,8 @@ function WhyChooseUsPage() {
 
                         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl animate-slideUp" style={{animationDelay: '0.4s'}}>
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                                <div className="order-2 lg:order-1">
-                                    <div className="aspect-square bg-gradient-to-br from-[#255993]/10 to-[#912018]/10 rounded-2xl flex items-center justify-center">
-                                        <Users className="w-24 h-24 text-[#255993]" />
-                                    </div>
+                                <div className="order-2 lg:order-1 rounded-2xl">
+                                        <img className="rounded-2xl shadow-md" src="https://i.postimg.cc/TPy4D7qj/woman-doing-occupational-therapy-session-with-psychologist.jpg" alt="Expert Staff Image"/>
                                 </div>
                                 <div className="order-1 lg:order-2">
                                     <h2 className="text-3xl font-bold text-gray-900 mb-6">Expert Staff</h2>
@@ -987,11 +974,49 @@ function CareersPage() {
     const [activeJob, setActiveJob] = useState<number | null>(null);
     const [, setHoveredBenefit] = useState<number | null>(null);
 
+    // Application modal state
+    const [showApplication, setShowApplication] = useState<boolean>(false);
+    const [submitting, setSubmitting] = useState<boolean>(false);
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        phone: '',
+        position: '',
+        message: ''
+    });
+
     useEffect(() => {
         const handleScroll = () => setScrollY(window.scrollY);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const openApplication = (position?: string) => {
+        setFormData(prev => ({ ...prev, position: position || prev.position }));
+        setShowApplication(true);
+    };
+
+    const closeApplication = () => {
+        setShowApplication(false);
+    };
+
+    const handleSubmitApplication: React.FormEventHandler<HTMLFormElement> = (e) => {
+        e.preventDefault();
+        // Basic validation
+        if (!formData.fullName || !formData.email) {
+            alert('Please provide your name and email.');
+            return;
+        }
+        setSubmitting(true);
+        // Simulate async send
+        setTimeout(() => {
+            setSubmitting(false);
+            setShowApplication(false);
+            // Reset form
+            setFormData({ fullName: '', email: '', phone: '', position: '', message: '' });
+            alert('Your application has been submitted.');
+        }, 1500);
+    };
 
     const benefits = [
         {
@@ -1126,11 +1151,11 @@ function CareersPage() {
                             with excellent training and development opportunities
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-gradient-to-r from-purple-600 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+                            <button onClick={() => openApplication()} className="bg-gradient-to-r from-purple-600 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
                                 <Zap className="w-5 h-5 mr-2" />
                                 Apply Now
                             </button>
-                            <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-purple-500 hover:text-purple-600 transform hover:-translate-y-1 transition-all duration-300 bg-white/80 backdrop-blur-sm">
+                            <button  className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-purple-500 hover:text-purple-600 transform hover:-translate-y-1 transition-all duration-300 bg-white/80 backdrop-blur-sm">
                                 Learn More
                             </button>
                         </div>
@@ -1273,7 +1298,7 @@ function CareersPage() {
                                     </div>
 
                                     {/* Apply Button */}
-                                    <button className={`w-full bg-gradient-to-r ${job.color} text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1 flex items-center justify-center`}>
+                                    <button onClick={() => openApplication(job.title)} className={`w-full bg-gradient-to-r ${job.color} text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1 flex items-center justify-center`}>
                                         Apply for this role
                                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </button>
@@ -1311,20 +1336,92 @@ function CareersPage() {
                                 </div>
 
                                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                                    <button className="bg-gradient-to-r from-purple-600 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+                                    <button onClick={() => openApplication()} className="bg-gradient-to-r from-purple-600 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
                                         <Mail className="w-5 h-5 mr-2" />
                                         Start Application
                                     </button>
-                                    <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-purple-500 hover:text-purple-600 transform hover:-translate-y-1 transition-all duration-300 bg-white/80 backdrop-blur-sm flex items-center justify-center">
+                                    <a href="tel:+441234567890" className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-purple-500 hover:text-purple-600 transform hover:-translate-y-1 transition-all duration-300 bg-white/80 backdrop-blur-sm flex items-center justify-center">
                                         <Phone className="w-5 h-5 mr-2" />
                                         Call Us First
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </AnimatedCard>
                 </div>
             </section>
+            {showApplication && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/50" onClick={closeApplication}></div>
+                    <div className="relative bg-white w-full max-w-lg mx-4 rounded-2xl shadow-2xl p-6 md:p-8 z-10">
+                        <div className="flex items-center justify-between mb-4">
+                            <h3 className="text-2xl font-bold text-slate-800">Application Form</h3>
+                            <button onClick={closeApplication} className="text-slate-500 hover:text-slate-700">✕</button>
+                        </div>
+                        <form onSubmit={handleSubmitApplication} className="space-y-4">
+                            <div>
+                                <label className="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                                <input
+                                    type="text"
+                                    value={formData.fullName}
+                                    onChange={e => setFormData(prev => ({ ...prev, fullName: e.target.value }))}
+                                    className="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                    placeholder="Jane Doe"
+                                    required
+                                />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                                    <input
+                                        type="email"
+                                        value={formData.email}
+                                        onChange={e => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                        className="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        placeholder="jane@example.com"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-slate-700 mb-1">Phone</label>
+                                    <input
+                                        type="tel"
+                                        value={formData.phone}
+                                        onChange={e => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                                        className="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        placeholder="+44 1234 567890"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-slate-700 mb-1">Position (optional)</label>
+                                <input
+                                    type="text"
+                                    value={formData.position}
+                                    onChange={e => setFormData(prev => ({ ...prev, position: e.target.value }))}
+                                    className="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                    placeholder="e.g., Care Assistant"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                                <textarea
+                                    value={formData.message}
+                                    onChange={e => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                                    className="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[100px]"
+                                    placeholder="Tell us briefly about your experience and availability"
+                                />
+                            </div>
+                            <div className="flex items-center justify-end gap-3 pt-2">
+                                <button type="button" onClick={closeApplication} className="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50">Cancel</button>
+                                <button type="submit" disabled={submitting} className="px-5 py-2 rounded-lg text-white bg-gradient-to-r from-purple-600 to-red-600 hover:from-purple-700 hover:to-red-700 disabled:opacity-60">
+                                    {submitting ? 'Submitting…' : 'Submit Application'}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
@@ -1744,11 +1841,11 @@ function ResourcesPage() {
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                         <div className="flex items-center text-slate-600">
                                             <Phone className="w-5 h-5 mr-2 text-blue-500" />
-                                            <span>Call: <span className="font-bold text-blue-600">0800 123 4567</span></span>
+                                            <span>Call: <span className="font-bold text-blue-600">00 4477 34180 131</span></span>
                                         </div>
                                         <div className="flex items-center text-slate-600">
                                             <Mail className="w-5 h-5 mr-2 text-indigo-500" />
-                                            <span>Email: <span className="font-bold text-indigo-600">info@citizens-care.co.uk</span></span>
+                                            <span>Email: <span className="font-bold text-indigo-600">admin@citizens-care.co.uk</span></span>
                                         </div>
                                     </div>
                                     <button className="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-indigo-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto">
@@ -1814,7 +1911,7 @@ function ContactPage() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-slate-800 mb-3">Call Us</h3>
                                 <p className="text-slate-600 mb-4">Available 24/7 for emergency support</p>
-                                <p className="text-xl font-semibold text-blue-600">0800 123 4567</p>
+                                <p className="text-xl font-semibold text-blue-600">00 4477 34180 131</p>
                             </div>
                         </div>
 
@@ -1827,7 +1924,7 @@ function ContactPage() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-slate-800 mb-3">Email Us</h3>
                                 <p className="text-slate-600 mb-4">We'll respond within 24 hours</p>
-                                <p className="text-lg font-semibold text-rose-600 break-all">info@citizens-care.co.uk</p>
+                                <p className="text-lg font-semibold text-rose-600 break-all">admin@citizens-care.co.uk</p>
                             </div>
                         </div>
 
@@ -1882,7 +1979,7 @@ function ContactPage() {
                     <div className="text-center animate-slideUp" style={{animationDelay: '0.9s'}}>
                         <div className="inline-block relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-rose-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
-                            <button onClick={() => window.open("mailto:info@citizens-care.co.uk", '')} className="relative bg-gradient-to-r from-blue-600 to-rose-600 text-white px-12 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-xl">
+                            <button onClick={() => window.open("mailto:admin@citizens-care.co.uk", '')} className="relative bg-gradient-to-r from-blue-600 to-rose-600 text-white px-12 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-xl">
                                 Request a Free Care Assessment
                             </button>
                         </div>
@@ -2127,7 +2224,7 @@ function Footer({ onNavigate }: { onNavigate: (route: Route) => void }) {
                                             </div>
                                             <div>
                                                 <p className="text-sm text-gray-400">Call Us</p>
-                                                <p className="text-white font-semibold">0800 123 4567</p>
+                                                <p className="text-white font-semibold">00 4477 34180 131</p>
                                             </div>
                                         </div>
                                         <p className="text-xs text-gray-500">Available 7 days a week</p>
@@ -2140,7 +2237,7 @@ function Footer({ onNavigate }: { onNavigate: (route: Route) => void }) {
                                             </div>
                                             <div>
                                                 <p className="text-sm text-gray-400">Email Us</p>
-                                                <p className="text-white font-semibold text-sm">info@citizens-care.co.uk</p>
+                                                <p className="text-white font-semibold text-sm">admin@citizens-care.co.uk</p>
                                             </div>
                                         </div>
                                         <p className="text-xs text-gray-500">We respond within 2 hours</p>
