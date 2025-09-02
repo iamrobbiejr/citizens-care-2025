@@ -1970,7 +1970,7 @@ function ContactPage() {
                             </div>
                             <div>
                                 <h4 className="font-semibold text-slate-800">Quality Assured</h4>
-                                <p className="text-slate-600 text-sm">CQC registered & regulated</p>
+                                <p className="text-slate-600 text-sm">CQC Pending</p>
                             </div>
                         </div>
                     </div>
